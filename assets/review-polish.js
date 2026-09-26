@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  // Action-control navigation opens the demo while keeping its heading in view.
+  // Preserve legacy action-control bookmarks after removing the outer disclosure.
   const revealDestination = (hash) => {
     if (!hash || !hash.startsWith('#')) return;
     let id;
@@ -18,9 +18,7 @@
     }
     if (id === 'trajectory-demo' || id === 'trajectory-details') {
       const section = document.getElementById('trajectory-demo');
-      const details = document.getElementById('trajectory-details');
-      if (!section || !details) return;
-      details.open = true;
+      if (!section) return;
       if (location.hash === hash && hash !== '#trajectory-demo') {
         const url = new URL(location.href);
         url.hash = 'trajectory-demo';
