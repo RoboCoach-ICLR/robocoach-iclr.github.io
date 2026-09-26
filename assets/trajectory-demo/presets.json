@@ -1,0 +1,2326 @@
+{
+  "scenes": [
+    {
+      "id": "bread-step-high",
+      "label": "Bread \u00b7 Upper route",
+      "task": "put the bread on the table",
+      "source_dataset": "RoboMind",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/bread-step-high.jpg",
+      "video": "assets/trajectory-demo/bread-step-high.mp4",
+      "record": "assets/trajectory-demo/bread-step-high.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 466.6939697265625,
+          "v": 143.52655029296875,
+          "depth": 0.9137453436851501,
+          "gripper": 0.9030836820602417
+        },
+        {
+          "label": "1",
+          "u": 466.6939697265625,
+          "v": 78.52655029296875,
+          "depth": 0.8937453436851501,
+          "gripper": 0.9030836820602417
+        },
+        {
+          "label": "2",
+          "u": 551.6939697265625,
+          "v": 78.52655029296875,
+          "depth": 0.8937453436851501,
+          "gripper": 0.9030836820602417
+        },
+        {
+          "label": "target",
+          "u": 551.6939697265625,
+          "v": 173.52655029296875,
+          "depth": 0.9237453436851502,
+          "gripper": 0.9030836820602417
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 466.6939697265625,
+              "v": 78.52655029296875,
+              "depth": 0.8937453436851501,
+              "gripper": 0.9030836820602417
+            },
+            {
+              "u": 551.6939697265625,
+              "v": 78.52655029296875,
+              "depth": 0.8937453436851501,
+              "gripper": 0.9030836820602417
+            },
+            {
+              "u": 551.6939697265625,
+              "v": 173.52655029296875,
+              "depth": 0.9237453436851502,
+              "gripper": 0.9030836820602417
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bread-bottom-safe",
+      "label": "Bread \u00b7 Lower route",
+      "task": "put the bread on the table",
+      "source_dataset": "RoboMind",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/bread-bottom-safe.jpg",
+      "video": "assets/trajectory-demo/bread-bottom-safe.mp4",
+      "record": "assets/trajectory-demo/bread-bottom-safe.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 466.6939697265625,
+          "v": 143.52655029296875,
+          "depth": 0.9137453436851501,
+          "gripper": 0.9030836820602417
+        },
+        {
+          "label": "1",
+          "u": 466.6939697265625,
+          "v": 188.52655029296875,
+          "depth": 0.8837453436851501,
+          "gripper": 0.9030836820602417
+        },
+        {
+          "label": "2",
+          "u": 551.6939697265625,
+          "v": 188.52655029296875,
+          "depth": 0.8837453436851501,
+          "gripper": 0.9030836820602417
+        },
+        {
+          "label": "target",
+          "u": 551.6939697265625,
+          "v": 173.52655029296875,
+          "depth": 0.9237453436851502,
+          "gripper": 0.9030836820602417
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 466.6939697265625,
+              "v": 188.52655029296875,
+              "depth": 0.8837453436851501,
+              "gripper": 0.9030836820602417
+            },
+            {
+              "u": 551.6939697265625,
+              "v": 188.52655029296875,
+              "depth": 0.8837453436851501,
+              "gripper": 0.9030836820602417
+            },
+            {
+              "u": 551.6939697265625,
+              "v": 173.52655029296875,
+              "depth": 0.9237453436851502,
+              "gripper": 0.9030836820602417
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table-step-high",
+      "label": "Tabletop \u00b7 Upper route",
+      "task": "Take the lid and place it on the teapot",
+      "source_dataset": "DROID",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/table-step-high.jpg",
+      "video": "assets/trajectory-demo/table-step-high.mp4",
+      "record": "assets/trajectory-demo/table-step-high.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 437.0771484375,
+          "v": 220.13465881347656,
+          "depth": 0.6828333735466003,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 437.0771484375,
+          "v": 160.13465881347656,
+          "depth": 0.6628333735466003,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 507.0771484375,
+          "v": 160.13465881347656,
+          "depth": 0.6628333735466003,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 507.0771484375,
+          "v": 220.13465881347656,
+          "depth": 0.6928333735466004,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 437.0771484375,
+              "v": 160.13465881347656,
+              "depth": 0.6628333735466003,
+              "gripper": 0.0
+            },
+            {
+              "u": 507.0771484375,
+              "v": 160.13465881347656,
+              "depth": 0.6628333735466003,
+              "gripper": 0.0
+            },
+            {
+              "u": 507.0771484375,
+              "v": 220.13465881347656,
+              "depth": 0.6928333735466004,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table-lower",
+      "label": "Tabletop \u00b7 Lower route",
+      "task": "Take the lid and place it on the teapot",
+      "source_dataset": "DROID",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/table-lower.jpg",
+      "video": "assets/trajectory-demo/table-lower.mp4",
+      "record": "assets/trajectory-demo/table-lower.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 437.0771484375,
+          "v": 220.13465881347656,
+          "depth": 0.6828333735466003,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 437.0771484375,
+          "v": 255.13465881347656,
+          "depth": 0.6928333735466004,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 507.0771484375,
+          "v": 255.13465881347656,
+          "depth": 0.6928333735466004,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 507.0771484375,
+          "v": 220.13465881347656,
+          "depth": 0.6928333735466004,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 437.0771484375,
+              "v": 255.13465881347656,
+              "depth": 0.6928333735466004,
+              "gripper": 0.0
+            },
+            {
+              "u": 507.0771484375,
+              "v": 255.13465881347656,
+              "depth": 0.6928333735466004,
+              "gripper": 0.0
+            },
+            {
+              "u": 507.0771484375,
+              "v": 220.13465881347656,
+              "depth": 0.6928333735466004,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drawer-step-high",
+      "label": "Drawer \u00b7 Upper route",
+      "task": "close drawer",
+      "source_dataset": "RoboMind",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/drawer-step-high.jpg",
+      "video": "assets/trajectory-demo/drawer-step-high.mp4",
+      "record": "assets/trajectory-demo/drawer-step-high.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 456.553955078125,
+          "v": 105.78006744384766,
+          "depth": 0.9435068368911743,
+          "gripper": 0.4669603705406189
+        },
+        {
+          "label": "1",
+          "u": 456.553955078125,
+          "v": 55.780067443847656,
+          "depth": 0.9235068368911743,
+          "gripper": 0.4669603705406189
+        },
+        {
+          "label": "2",
+          "u": 526.553955078125,
+          "v": 55.780067443847656,
+          "depth": 0.9235068368911743,
+          "gripper": 0.4669603705406189
+        },
+        {
+          "label": "target",
+          "u": 526.553955078125,
+          "v": 145.78006744384766,
+          "depth": 0.9535068368911743,
+          "gripper": 0.4669603705406189
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 456.553955078125,
+              "v": 55.780067443847656,
+              "depth": 0.9235068368911743,
+              "gripper": 0.4669603705406189
+            },
+            {
+              "u": 526.553955078125,
+              "v": 55.780067443847656,
+              "depth": 0.9235068368911743,
+              "gripper": 0.4669603705406189
+            },
+            {
+              "u": 526.553955078125,
+              "v": 145.78006744384766,
+              "depth": 0.9535068368911743,
+              "gripper": 0.4669603705406189
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drawer-bottom",
+      "label": "Drawer \u00b7 Lower route",
+      "task": "close drawer",
+      "source_dataset": "RoboMind",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/drawer-bottom.jpg",
+      "video": "assets/trajectory-demo/drawer-bottom.mp4",
+      "record": "assets/trajectory-demo/drawer-bottom.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 456.553955078125,
+          "v": 105.78006744384766,
+          "depth": 0.9435068368911743,
+          "gripper": 0.4669603705406189
+        },
+        {
+          "label": "1",
+          "u": 456.553955078125,
+          "v": 185.78006744384766,
+          "depth": 0.9535068368911743,
+          "gripper": 0.4669603705406189
+        },
+        {
+          "label": "2",
+          "u": 526.553955078125,
+          "v": 185.78006744384766,
+          "depth": 0.9535068368911743,
+          "gripper": 0.4669603705406189
+        },
+        {
+          "label": "target",
+          "u": 526.553955078125,
+          "v": 145.78006744384766,
+          "depth": 0.9535068368911743,
+          "gripper": 0.4669603705406189
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 456.553955078125,
+              "v": 185.78006744384766,
+              "depth": 0.9535068368911743,
+              "gripper": 0.4669603705406189
+            },
+            {
+              "u": 526.553955078125,
+              "v": 185.78006744384766,
+              "depth": 0.9535068368911743,
+              "gripper": 0.4669603705406189
+            },
+            {
+              "u": 526.553955078125,
+              "v": 145.78006744384766,
+              "depth": 0.9535068368911743,
+              "gripper": 0.4669603705406189
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cup-step-high-rgb",
+      "label": "Cup \u00b7 Upper route",
+      "task": "Drop the container onto the dish plate using the cup with blue flowers",
+      "source_dataset": "RoboTwin",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/cup-step-high-rgb.jpg",
+      "video": "assets/trajectory-demo/cup-step-high-rgb.mp4",
+      "record": "assets/trajectory-demo/cup-step-high-rgb.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 63.82234191894531,
+          "v": 64.75070190429688,
+          "depth": 0.45064231753349304,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 63.82234191894531,
+          "v": 24.750701904296875,
+          "depth": 0.430642317533493,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 268.8223419189453,
+          "v": 24.750701904296875,
+          "depth": 0.430642317533493,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 268.8223419189453,
+          "v": 184.75070190429688,
+          "depth": 0.46064231753349305,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 63.82234191894531,
+              "v": 24.750701904296875,
+              "depth": 0.430642317533493,
+              "gripper": 0.0
+            },
+            {
+              "u": 268.8223419189453,
+              "v": 24.750701904296875,
+              "depth": 0.430642317533493,
+              "gripper": 0.0
+            },
+            {
+              "u": 268.8223419189453,
+              "v": 184.75070190429688,
+              "depth": 0.46064231753349305,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ],
+      "display_transform": "swap_red_blue"
+    },
+    {
+      "id": "cup-bottom-rgb",
+      "label": "Cup \u00b7 Lower route",
+      "task": "Drop the container onto the dish plate using the cup with blue flowers",
+      "source_dataset": "RoboTwin",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/cup-bottom-rgb.jpg",
+      "video": "assets/trajectory-demo/cup-bottom-rgb.mp4",
+      "record": "assets/trajectory-demo/cup-bottom-rgb.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 63.82234191894531,
+          "v": 64.75070190429688,
+          "depth": 0.45064231753349304,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 63.82234191894531,
+          "v": 224.75070190429688,
+          "depth": 0.46064231753349305,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 268.8223419189453,
+          "v": 224.75070190429688,
+          "depth": 0.46064231753349305,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 268.8223419189453,
+          "v": 184.75070190429688,
+          "depth": 0.46064231753349305,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 63.82234191894531,
+              "v": 224.75070190429688,
+              "depth": 0.46064231753349305,
+              "gripper": 0.0
+            },
+            {
+              "u": 268.8223419189453,
+              "v": 224.75070190429688,
+              "depth": 0.46064231753349305,
+              "gripper": 0.0
+            },
+            {
+              "u": 268.8223419189453,
+              "v": 184.75070190429688,
+              "depth": 0.46064231753349305,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ],
+      "display_transform": "swap_red_blue"
+    },
+    {
+      "id": "libero-mug-high",
+      "label": "Mug \u00b7 Upper route",
+      "task": "pick up the yellow and white mug and place it to the right of the caddy",
+      "source_dataset": "LIBERO",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/libero-mug-high.jpg",
+      "video": "assets/trajectory-demo/libero-mug-high.mp4",
+      "record": "assets/trajectory-demo/libero-mug-high.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 428.8602600097656,
+          "v": 367.0185546875,
+          "depth": 0.8395286202430725,
+          "gripper": 0.10883248597383499
+        },
+        {
+          "label": "1",
+          "u": 428.8602600097656,
+          "v": 277.0185546875,
+          "depth": 0.8195286202430725,
+          "gripper": 0.10883248597383499
+        },
+        {
+          "label": "2",
+          "u": 518.8602600097656,
+          "v": 277.0185546875,
+          "depth": 0.8195286202430725,
+          "gripper": 0.10883248597383499
+        },
+        {
+          "label": "target",
+          "u": 518.8602600097656,
+          "v": 367.0185546875,
+          "depth": 0.8495286202430725,
+          "gripper": 0.10883248597383499
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 428.8602600097656,
+              "v": 277.0185546875,
+              "depth": 0.8195286202430725,
+              "gripper": 0.10883248597383499
+            },
+            {
+              "u": 518.8602600097656,
+              "v": 277.0185546875,
+              "depth": 0.8195286202430725,
+              "gripper": 0.10883248597383499
+            },
+            {
+              "u": 518.8602600097656,
+              "v": 367.0185546875,
+              "depth": 0.8495286202430725,
+              "gripper": 0.10883248597383499
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libero-lower",
+      "label": "Mug \u00b7 Lower route",
+      "task": "pick up the yellow and white mug and place it to the right of the caddy",
+      "source_dataset": "LIBERO",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/libero-lower.jpg",
+      "video": "assets/trajectory-demo/libero-lower.mp4",
+      "record": "assets/trajectory-demo/libero-lower.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 428.8602600097656,
+          "v": 367.0185546875,
+          "depth": 0.8395286202430725,
+          "gripper": 0.10883248597383499
+        },
+        {
+          "label": "1",
+          "u": 428.8602600097656,
+          "v": 397.0185546875,
+          "depth": 0.8495286202430725,
+          "gripper": 0.10883248597383499
+        },
+        {
+          "label": "2",
+          "u": 518.8602600097656,
+          "v": 397.0185546875,
+          "depth": 0.8495286202430725,
+          "gripper": 0.10883248597383499
+        },
+        {
+          "label": "target",
+          "u": 518.8602600097656,
+          "v": 367.0185546875,
+          "depth": 0.8495286202430725,
+          "gripper": 0.10883248597383499
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 428.8602600097656,
+              "v": 397.0185546875,
+              "depth": 0.8495286202430725,
+              "gripper": 0.10883248597383499
+            },
+            {
+              "u": 518.8602600097656,
+              "v": 397.0185546875,
+              "depth": 0.8495286202430725,
+              "gripper": 0.10883248597383499
+            },
+            {
+              "u": 518.8602600097656,
+              "v": 367.0185546875,
+              "depth": 0.8495286202430725,
+              "gripper": 0.10883248597383499
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual-cloth-in",
+      "label": "Both arms \u00b7 Upper routes",
+      "task": "Fold towels",
+      "source_dataset": "RoboCoin",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/dual-cloth-in.jpg",
+      "video": "assets/trajectory-demo/dual-cloth-in.mp4",
+      "record": "assets/trajectory-demo/dual-cloth-in.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 125.98112487792969,
+          "v": 209.4691162109375,
+          "depth": 0.4539776146411896,
+          "gripper": 0.9599999785423279
+        },
+        {
+          "label": "1",
+          "u": 125.98112487792969,
+          "v": 174.4691162109375,
+          "depth": 0.43397761464118956,
+          "gripper": 0.9599999785423279
+        },
+        {
+          "label": "2",
+          "u": 190.9811248779297,
+          "v": 174.4691162109375,
+          "depth": 0.43397761464118956,
+          "gripper": 0.9599999785423279
+        },
+        {
+          "label": "target",
+          "u": 190.9811248779297,
+          "v": 209.4691162109375,
+          "depth": 0.4539776146411896,
+          "gripper": 0.9599999785423279
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up together",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Move inward",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down together",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 125.98112487792969,
+              "v": 174.4691162109375,
+              "depth": 0.43397761464118956,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "u": 190.9811248779297,
+              "v": 174.4691162109375,
+              "depth": 0.43397761464118956,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "u": 190.9811248779297,
+              "v": 209.4691162109375,
+              "depth": 0.4539776146411896,
+              "gripper": 0.9599999785423279
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 683.9629516601562,
+              "v": 209.14759826660156,
+              "depth": 0.4486482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "u": 618.9629516601562,
+              "v": 209.14759826660156,
+              "depth": 0.4486482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "u": 618.9629516601562,
+              "v": 244.14759826660156,
+              "depth": 0.4686482846736908,
+              "gripper": 0.9190000295639038
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "arm": "Left arm",
+          "slot": 0,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 125.98112487792969,
+              "v": 209.4691162109375,
+              "depth": 0.4539776146411896,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "label": "1",
+              "u": 125.98112487792969,
+              "v": 174.4691162109375,
+              "depth": 0.43397761464118956,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "label": "2",
+              "u": 190.9811248779297,
+              "v": 174.4691162109375,
+              "depth": 0.43397761464118956,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "label": "target",
+              "u": 190.9811248779297,
+              "v": 209.4691162109375,
+              "depth": 0.4539776146411896,
+              "gripper": 0.9599999785423279
+            }
+          ],
+          "labels": [
+            "Up",
+            "Right",
+            "Down"
+          ]
+        },
+        {
+          "arm": "Right arm",
+          "slot": 1,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 683.9629516601562,
+              "v": 244.14759826660156,
+              "depth": 0.4686482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "label": "1",
+              "u": 683.9629516601562,
+              "v": 209.14759826660156,
+              "depth": 0.4486482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "label": "2",
+              "u": 618.9629516601562,
+              "v": 209.14759826660156,
+              "depth": 0.4486482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "label": "target",
+              "u": 618.9629516601562,
+              "v": 244.14759826660156,
+              "depth": 0.4686482846736908,
+              "gripper": 0.9190000295639038
+            }
+          ],
+          "labels": [
+            "Up",
+            "Left",
+            "Down"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual-cloth-bottom",
+      "label": "Both arms \u00b7 Lower routes",
+      "task": "Fold towels",
+      "source_dataset": "RoboCoin",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/dual-cloth-bottom.jpg",
+      "video": "assets/trajectory-demo/dual-cloth-bottom.mp4",
+      "record": "assets/trajectory-demo/dual-cloth-bottom.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 125.98112487792969,
+          "v": 209.4691162109375,
+          "depth": 0.4539776146411896,
+          "gripper": 0.9599999785423279
+        },
+        {
+          "label": "1",
+          "u": 125.98112487792969,
+          "v": 244.4691162109375,
+          "depth": 0.4639776146411896,
+          "gripper": 0.9599999785423279
+        },
+        {
+          "label": "2",
+          "u": 190.9811248779297,
+          "v": 244.4691162109375,
+          "depth": 0.4639776146411896,
+          "gripper": 0.9599999785423279
+        },
+        {
+          "label": "target",
+          "u": 190.9811248779297,
+          "v": 209.4691162109375,
+          "depth": 0.4539776146411896,
+          "gripper": 0.9599999785423279
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down together",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Move inward",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up together",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 125.98112487792969,
+              "v": 244.4691162109375,
+              "depth": 0.4639776146411896,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "u": 190.9811248779297,
+              "v": 244.4691162109375,
+              "depth": 0.4639776146411896,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "u": 190.9811248779297,
+              "v": 209.4691162109375,
+              "depth": 0.4539776146411896,
+              "gripper": 0.9599999785423279
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 683.9629516601562,
+              "v": 279.14759826660156,
+              "depth": 0.4786482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "u": 618.9629516601562,
+              "v": 279.14759826660156,
+              "depth": 0.4786482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "u": 618.9629516601562,
+              "v": 244.14759826660156,
+              "depth": 0.4686482846736908,
+              "gripper": 0.9190000295639038
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "arm": "Left arm",
+          "slot": 0,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 125.98112487792969,
+              "v": 209.4691162109375,
+              "depth": 0.4539776146411896,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "label": "1",
+              "u": 125.98112487792969,
+              "v": 244.4691162109375,
+              "depth": 0.4639776146411896,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "label": "2",
+              "u": 190.9811248779297,
+              "v": 244.4691162109375,
+              "depth": 0.4639776146411896,
+              "gripper": 0.9599999785423279
+            },
+            {
+              "label": "target",
+              "u": 190.9811248779297,
+              "v": 209.4691162109375,
+              "depth": 0.4539776146411896,
+              "gripper": 0.9599999785423279
+            }
+          ],
+          "labels": [
+            "Down",
+            "Right",
+            "Up"
+          ]
+        },
+        {
+          "arm": "Right arm",
+          "slot": 1,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 683.9629516601562,
+              "v": 244.14759826660156,
+              "depth": 0.4686482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "label": "1",
+              "u": 683.9629516601562,
+              "v": 279.14759826660156,
+              "depth": 0.4786482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "label": "2",
+              "u": 618.9629516601562,
+              "v": 279.14759826660156,
+              "depth": 0.4786482846736908,
+              "gripper": 0.9190000295639038
+            },
+            {
+              "label": "target",
+              "u": 618.9629516601562,
+              "v": 244.14759826660156,
+              "depth": 0.4686482846736908,
+              "gripper": 0.9190000295639038
+            }
+          ],
+          "labels": [
+            "Down",
+            "Left",
+            "Up"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libero-milk-upper",
+      "label": "Milk Carton \u00b7 Upper route",
+      "task": "pick up the milk and place it in the basket",
+      "source_dataset": "LIBERO",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/libero-milk-upper.jpg",
+      "video": "assets/trajectory-demo/libero-milk-upper.mp4",
+      "record": "assets/trajectory-demo/libero-milk-upper.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 291.5228271484375,
+          "v": 151.56222534179688,
+          "depth": 1.0608670711517334,
+          "gripper": 0.42740336060523987
+        },
+        {
+          "label": "1",
+          "u": 291.5228271484375,
+          "v": 111.56222534179688,
+          "depth": 1.0508670711517334,
+          "gripper": 0.42740336060523987
+        },
+        {
+          "label": "2",
+          "u": 356.5228271484375,
+          "v": 111.56222534179688,
+          "depth": 1.0508670711517334,
+          "gripper": 0.42740336060523987
+        },
+        {
+          "label": "target",
+          "u": 356.5228271484375,
+          "v": 151.56222534179688,
+          "depth": 1.0608670711517334,
+          "gripper": 0.42740336060523987
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 291.5228271484375,
+              "v": 111.56222534179688,
+              "depth": 1.0508670711517334,
+              "gripper": 0.42740336060523987
+            },
+            {
+              "u": 356.5228271484375,
+              "v": 111.56222534179688,
+              "depth": 1.0508670711517334,
+              "gripper": 0.42740336060523987
+            },
+            {
+              "u": 356.5228271484375,
+              "v": 151.56222534179688,
+              "depth": 1.0608670711517334,
+              "gripper": 0.42740336060523987
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libero-milk-lower",
+      "label": "Milk Carton \u00b7 Lower route",
+      "task": "pick up the milk and place it in the basket",
+      "source_dataset": "LIBERO",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/libero-milk-lower.jpg",
+      "video": "assets/trajectory-demo/libero-milk-lower.mp4",
+      "record": "assets/trajectory-demo/libero-milk-lower.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 291.5228271484375,
+          "v": 151.56222534179688,
+          "depth": 1.0608670711517334,
+          "gripper": 0.42740336060523987
+        },
+        {
+          "label": "1",
+          "u": 291.5228271484375,
+          "v": 181.56222534179688,
+          "depth": 1.0508670711517334,
+          "gripper": 0.42740336060523987
+        },
+        {
+          "label": "2",
+          "u": 356.5228271484375,
+          "v": 181.56222534179688,
+          "depth": 1.0508670711517334,
+          "gripper": 0.42740336060523987
+        },
+        {
+          "label": "target",
+          "u": 356.5228271484375,
+          "v": 151.56222534179688,
+          "depth": 1.0608670711517334,
+          "gripper": 0.42740336060523987
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Right",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 291.5228271484375,
+              "v": 181.56222534179688,
+              "depth": 1.0508670711517334,
+              "gripper": 0.42740336060523987
+            },
+            {
+              "u": 356.5228271484375,
+              "v": 181.56222534179688,
+              "depth": 1.0508670711517334,
+              "gripper": 0.42740336060523987
+            },
+            {
+              "u": 356.5228271484375,
+              "v": 151.56222534179688,
+              "depth": 1.0608670711517334,
+              "gripper": 0.42740336060523987
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "droid-egg-upper",
+      "label": "Checkered Table \u00b7 Upper route",
+      "task": "Put the egg on the table in the red bowl on the right",
+      "source_dataset": "DROID",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/droid-egg-upper.jpg",
+      "video": "assets/trajectory-demo/droid-egg-upper.mp4",
+      "record": "assets/trajectory-demo/droid-egg-upper.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 453.81146240234375,
+          "v": 215.114013671875,
+          "depth": 0.7285498380661011,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 453.81146240234375,
+          "v": 175.114013671875,
+          "depth": 0.7185498380661011,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 393.81146240234375,
+          "v": 175.114013671875,
+          "depth": 0.7185498380661011,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 393.81146240234375,
+          "v": 215.114013671875,
+          "depth": 0.7285498380661011,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Left",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 453.81146240234375,
+              "v": 175.114013671875,
+              "depth": 0.7185498380661011,
+              "gripper": 0.0
+            },
+            {
+              "u": 393.81146240234375,
+              "v": 175.114013671875,
+              "depth": 0.7185498380661011,
+              "gripper": 0.0
+            },
+            {
+              "u": 393.81146240234375,
+              "v": 215.114013671875,
+              "depth": 0.7285498380661011,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "droid-egg-lower",
+      "label": "Checkered Table \u00b7 Lower route",
+      "task": "Put the egg on the table in the red bowl on the right",
+      "source_dataset": "DROID",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/droid-egg-lower.jpg",
+      "video": "assets/trajectory-demo/droid-egg-lower.mp4",
+      "record": "assets/trajectory-demo/droid-egg-lower.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 453.81146240234375,
+          "v": 215.114013671875,
+          "depth": 0.7285498380661011,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 453.81146240234375,
+          "v": 245.114013671875,
+          "depth": 0.7185498380661011,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 393.81146240234375,
+          "v": 245.114013671875,
+          "depth": 0.7185498380661011,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 393.81146240234375,
+          "v": 215.114013671875,
+          "depth": 0.7285498380661011,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Left",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 453.81146240234375,
+              "v": 245.114013671875,
+              "depth": 0.7185498380661011,
+              "gripper": 0.0
+            },
+            {
+              "u": 393.81146240234375,
+              "v": 245.114013671875,
+              "depth": 0.7185498380661011,
+              "gripper": 0.0
+            },
+            {
+              "u": 393.81146240234375,
+              "v": 215.114013671875,
+              "depth": 0.7285498380661011,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual-tubes-upper",
+      "label": "Dual-Arm Tubes \u00b7 Upper route",
+      "task": "Put the test tube on the table back onto the test tube rack.",
+      "source_dataset": "RoboCoin",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/dual-tubes-upper.jpg",
+      "video": "assets/trajectory-demo/dual-tubes-upper.mp4",
+      "record": "assets/trajectory-demo/dual-tubes-upper.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 193.72816467285156,
+          "v": 244.68170166015625,
+          "depth": 0.31789836287498474,
+          "gripper": 0.9975490570068359
+        },
+        {
+          "label": "1",
+          "u": 193.72816467285156,
+          "v": 209.68170166015625,
+          "depth": 0.30789836287498473,
+          "gripper": 0.9975490570068359
+        },
+        {
+          "label": "2",
+          "u": 233.72816467285156,
+          "v": 209.68170166015625,
+          "depth": 0.30789836287498473,
+          "gripper": 0.9975490570068359
+        },
+        {
+          "label": "target",
+          "u": 233.72816467285156,
+          "v": 244.68170166015625,
+          "depth": 0.31789836287498474,
+          "gripper": 0.9975490570068359
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up together",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Move inward",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down together",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 193.72816467285156,
+              "v": 209.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "u": 233.72816467285156,
+              "v": 209.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "u": 233.72816467285156,
+              "v": 244.68170166015625,
+              "depth": 0.31789836287498474,
+              "gripper": 0.9975490570068359
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 573.5787963867188,
+              "v": 206.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "u": 533.5787963867188,
+              "v": 206.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "u": 533.5787963867188,
+              "v": 241.6437530517578,
+              "depth": 0.3045520484447479,
+              "gripper": 0.01724136807024479
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "arm": "Left arm",
+          "slot": 0,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 193.72816467285156,
+              "v": 244.68170166015625,
+              "depth": 0.31789836287498474,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "label": "1",
+              "u": 193.72816467285156,
+              "v": 209.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "label": "2",
+              "u": 233.72816467285156,
+              "v": 209.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "label": "target",
+              "u": 233.72816467285156,
+              "v": 244.68170166015625,
+              "depth": 0.31789836287498474,
+              "gripper": 0.9975490570068359
+            }
+          ],
+          "labels": [
+            "Up",
+            "Right",
+            "Down"
+          ]
+        },
+        {
+          "arm": "Right arm",
+          "slot": 1,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 573.5787963867188,
+              "v": 241.6437530517578,
+              "depth": 0.3045520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "label": "1",
+              "u": 573.5787963867188,
+              "v": 206.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "label": "2",
+              "u": 533.5787963867188,
+              "v": 206.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "label": "target",
+              "u": 533.5787963867188,
+              "v": 241.6437530517578,
+              "depth": 0.3045520484447479,
+              "gripper": 0.01724136807024479
+            }
+          ],
+          "labels": [
+            "Up",
+            "Left",
+            "Down"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual-tubes-lower",
+      "label": "Dual-Arm Tubes \u00b7 Lower route",
+      "task": "Put the test tube on the table back onto the test tube rack.",
+      "source_dataset": "RoboCoin",
+      "seed_type": "real-world recording",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/dual-tubes-lower.jpg",
+      "video": "assets/trajectory-demo/dual-tubes-lower.mp4",
+      "record": "assets/trajectory-demo/dual-tubes-lower.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 30,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 193.72816467285156,
+          "v": 244.68170166015625,
+          "depth": 0.31789836287498474,
+          "gripper": 0.9975490570068359
+        },
+        {
+          "label": "1",
+          "u": 193.72816467285156,
+          "v": 274.68170166015625,
+          "depth": 0.30789836287498473,
+          "gripper": 0.9975490570068359
+        },
+        {
+          "label": "2",
+          "u": 233.72816467285156,
+          "v": 274.68170166015625,
+          "depth": 0.30789836287498473,
+          "gripper": 0.9975490570068359
+        },
+        {
+          "label": "target",
+          "u": 233.72816467285156,
+          "v": 244.68170166015625,
+          "depth": 0.31789836287498474,
+          "gripper": 0.9975490570068359
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down together",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Move inward",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up together",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 0,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 193.72816467285156,
+              "v": 274.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "u": 233.72816467285156,
+              "v": 274.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "u": 233.72816467285156,
+              "v": 244.68170166015625,
+              "depth": 0.31789836287498474,
+              "gripper": 0.9975490570068359
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 573.5787963867188,
+              "v": 271.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "u": 533.5787963867188,
+              "v": 271.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "u": 533.5787963867188,
+              "v": 241.6437530517578,
+              "depth": 0.3045520484447479,
+              "gripper": 0.01724136807024479
+            }
+          ]
+        }
+      ],
+      "paths": [
+        {
+          "arm": "Left arm",
+          "slot": 0,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 193.72816467285156,
+              "v": 244.68170166015625,
+              "depth": 0.31789836287498474,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "label": "1",
+              "u": 193.72816467285156,
+              "v": 274.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "label": "2",
+              "u": 233.72816467285156,
+              "v": 274.68170166015625,
+              "depth": 0.30789836287498473,
+              "gripper": 0.9975490570068359
+            },
+            {
+              "label": "target",
+              "u": 233.72816467285156,
+              "v": 244.68170166015625,
+              "depth": 0.31789836287498474,
+              "gripper": 0.9975490570068359
+            }
+          ],
+          "labels": [
+            "Down",
+            "Right",
+            "Up"
+          ]
+        },
+        {
+          "arm": "Right arm",
+          "slot": 1,
+          "nodes": [
+            {
+              "label": "now",
+              "u": 573.5787963867188,
+              "v": 241.6437530517578,
+              "depth": 0.3045520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "label": "1",
+              "u": 573.5787963867188,
+              "v": 271.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "label": "2",
+              "u": 533.5787963867188,
+              "v": 271.6437530517578,
+              "depth": 0.2945520484447479,
+              "gripper": 0.01724136807024479
+            },
+            {
+              "label": "target",
+              "u": 533.5787963867188,
+              "v": 241.6437530517578,
+              "depth": 0.3045520484447479,
+              "gripper": 0.01724136807024479
+            }
+          ],
+          "labels": [
+            "Down",
+            "Left",
+            "Up"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shoe-compact-upper-rgb",
+      "label": "Shoe \u00b7 Upper route",
+      "task": "Grab the shoe with black heel patch using the right arm and drop it on the mat",
+      "source_dataset": "RoboTwin",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/shoe-compact-upper-rgb.jpg",
+      "video": "assets/trajectory-demo/shoe-compact-upper-rgb.mp4",
+      "record": "assets/trajectory-demo/shoe-compact-upper-rgb.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 40,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 647.01953125,
+          "v": 102.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 647.01953125,
+          "v": 67.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 477.01953125,
+          "v": 67.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 477.01953125,
+          "v": 162.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Up",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Left",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Down",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 1,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 647.01953125,
+              "v": 67.83011627197266,
+              "depth": 0.5394558906555176,
+              "gripper": 0.0
+            },
+            {
+              "u": 477.01953125,
+              "v": 67.83011627197266,
+              "depth": 0.5394558906555176,
+              "gripper": 0.0
+            },
+            {
+              "u": 477.01953125,
+              "v": 162.83011627197266,
+              "depth": 0.5394558906555176,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ],
+      "display_transform": "swap_red_blue"
+    },
+    {
+      "id": "shoe-compact-lower-rgb",
+      "label": "Shoe \u00b7 Lower route",
+      "task": "Grab the shoe with black heel patch using the right arm and drop it on the mat",
+      "source_dataset": "RoboTwin",
+      "seed_type": "simulation",
+      "output_type": "world-model prediction",
+      "control_type": "manually specified waypoints",
+      "width": 768,
+      "height": 512,
+      "image": "assets/trajectory-demo/shoe-compact-lower-rgb.jpg",
+      "video": "assets/trajectory-demo/shoe-compact-lower-rgb.mp4",
+      "record": "assets/trajectory-demo/shoe-compact-lower-rgb.json",
+      "duration": 2.6,
+      "control_duration": 2.4,
+      "fps": 5,
+      "inference_steps": 40,
+      "nodes": [
+        {
+          "label": "now",
+          "u": 647.01953125,
+          "v": 102.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        },
+        {
+          "label": "1",
+          "u": 647.01953125,
+          "v": 192.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        },
+        {
+          "label": "2",
+          "u": 477.01953125,
+          "v": 192.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        },
+        {
+          "label": "target",
+          "u": 477.01953125,
+          "v": 162.83011627197266,
+          "depth": 0.5394558906555176,
+          "gripper": 0.0
+        }
+      ],
+      "segments": [
+        {
+          "label": "Down",
+          "start": 0,
+          "end": 0.8
+        },
+        {
+          "label": "Left",
+          "start": 0.8,
+          "end": 1.6
+        },
+        {
+          "label": "Up",
+          "start": 1.6,
+          "end": 2.6
+        }
+      ],
+      "controls": [
+        {
+          "slot": 1,
+          "source": "manual_uv_depth",
+          "path_uv_depth": [
+            {
+              "u": 647.01953125,
+              "v": 192.83011627197266,
+              "depth": 0.5394558906555176,
+              "gripper": 0.0
+            },
+            {
+              "u": 477.01953125,
+              "v": 192.83011627197266,
+              "depth": 0.5394558906555176,
+              "gripper": 0.0
+            },
+            {
+              "u": 477.01953125,
+              "v": 162.83011627197266,
+              "depth": 0.5394558906555176,
+              "gripper": 0.0
+            }
+          ]
+        }
+      ],
+      "display_transform": "swap_red_blue"
+    }
+  ],
+  "pairs": [
+    {
+      "label": "RoboCoin \u00b7 dual-arm cloth",
+      "task": "RoboCoin real-world recording \u00b7 Same starting scene and targets; upper versus lower routes for both arms. Both arms are conditioned, with a requested path and marker for each. Both videos are model predictions.",
+      "scenes": [
+        "dual-cloth-in",
+        "dual-cloth-bottom"
+      ]
+    },
+    {
+      "label": "RoboCoin \u00b7 dual-arm tubes",
+      "task": "RoboCoin real-world recording \u00b7 Same starting scene and targets; manually drawn upper and lower routes. Both arms are conditioned, with a requested path for each. Both videos are model predictions.",
+      "scenes": [
+        "dual-tubes-upper",
+        "dual-tubes-lower"
+      ]
+    },
+    {
+      "label": "RoboMind \u00b7 bread",
+      "task": "RoboMind real-world recording \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "bread-step-high",
+        "bread-bottom-safe"
+      ]
+    },
+    {
+      "label": "RoboMind \u00b7 drawer",
+      "task": "RoboMind real-world recording \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "drawer-step-high",
+        "drawer-bottom"
+      ]
+    },
+    {
+      "label": "DROID \u00b7 tabletop",
+      "task": "DROID real-world recording \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "table-step-high",
+        "table-lower"
+      ]
+    },
+    {
+      "label": "DROID \u00b7 checkered table",
+      "task": "DROID real-world recording \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "droid-egg-upper",
+        "droid-egg-lower"
+      ]
+    },
+    {
+      "label": "RoboTwin \u00b7 cup",
+      "task": "RoboTwin simulation \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "cup-step-high-rgb",
+        "cup-bottom-rgb"
+      ]
+    },
+    {
+      "label": "RoboTwin \u00b7 shoe",
+      "task": "RoboTwin simulation \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "shoe-compact-upper-rgb",
+        "shoe-compact-lower-rgb"
+      ]
+    },
+    {
+      "label": "LIBERO \u00b7 mug",
+      "task": "LIBERO simulation \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "libero-mug-high",
+        "libero-lower"
+      ]
+    },
+    {
+      "label": "LIBERO \u00b7 milk carton",
+      "task": "LIBERO simulation \u00b7 Same starting scene and target; manually drawn upper and lower routes. Both videos are model predictions.",
+      "scenes": [
+        "libero-milk-upper",
+        "libero-milk-lower"
+      ]
+    }
+  ]
+}
