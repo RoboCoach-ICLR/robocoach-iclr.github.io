@@ -1,15 +1,58 @@
 (() => {
   'use strict';
-  // Deep links into folded technical explanations still open their destination.
+  // Action-control links stop at its heading; other deep links reveal their content.
   const revealDestination = (hash) => {
     if (!hash || !hash.startsWith('#')) return;
-    const target = document.getElementById(decodeURIComponent(hash.slice(1)));
-    let parent = target?.parentElement;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); } catch (_) { return; }
+    if (id === 'coaching' || id === 'coaching-details') {
+      const judge = document.getElementById('judge');
+      if (!judge) return;
+      if (location.hash === hash) {
+        const url = new URL(location.href);
+        url.hash = 'judge';
+        history.replaceState(history.state, '', url);
+      }
+      requestAnimationFrame(() => judge.scrollIntoView({ block: 'start' }));
+      return '#judge';
+    }
+    if (id === 'trajectory-demo') id = 'trajectory-details';
+    const target = document.getElementById(id);
+    const manualFold = target?.closest('#trajectory-details');
+    if (manualFold) {
+      if (location.hash === hash && hash !== '#trajectory-details') {
+        const url = new URL(location.href);
+        url.hash = 'trajectory-details';
+        history.replaceState(history.state, '', url);
+      }
+      requestAnimationFrame(() => manualFold.scrollIntoView({ block: 'start' }));
+      return '#trajectory-details';
+    }
+    let parent = target;
     while (parent) { if (parent.tagName === 'DETAILS') parent.open = true; parent = parent.parentElement; }
   };
+  document.querySelectorAll('details[data-research-fold]').forEach(details => {
+    details.addEventListener('toggle', () => {
+      if (details.open) {
+        details.querySelectorAll('iframe[data-src]').forEach(frame => {
+          frame.src = frame.dataset.src;
+          delete frame.dataset.src;
+        });
+      } else {
+        details.querySelectorAll('video').forEach(video => video.pause());
+      }
+    });
+  });
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');
-    if (link) revealDestination(link.getAttribute('href'));
+    if (link) {
+      const hash = link.getAttribute('href');
+      const destination = revealDestination(hash);
+      if (destination && destination !== hash) {
+        event.preventDefault();
+        location.hash = destination;
+      }
+    }
   }, true);
   window.addEventListener('hashchange', () => revealDestination(location.hash));
   revealDestination(location.hash);
