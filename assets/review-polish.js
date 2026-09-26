@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  // Action-control links stop at its heading; other deep links reveal their content.
+  // Action-control navigation opens the demo while keeping its heading in view.
   const revealDestination = (hash) => {
     if (!hash || !hash.startsWith('#')) return;
     let id;
@@ -16,18 +16,20 @@
       requestAnimationFrame(() => judge.scrollIntoView({ block: 'start' }));
       return '#judge';
     }
-    if (id === 'trajectory-demo') id = 'trajectory-details';
-    const target = document.getElementById(id);
-    const manualFold = target?.closest('#trajectory-details');
-    if (manualFold) {
-      if (location.hash === hash && hash !== '#trajectory-details') {
+    if (id === 'trajectory-demo' || id === 'trajectory-details') {
+      const section = document.getElementById('trajectory-demo');
+      const details = document.getElementById('trajectory-details');
+      if (!section || !details) return;
+      details.open = true;
+      if (location.hash === hash && hash !== '#trajectory-demo') {
         const url = new URL(location.href);
-        url.hash = 'trajectory-details';
+        url.hash = 'trajectory-demo';
         history.replaceState(history.state, '', url);
       }
-      requestAnimationFrame(() => manualFold.scrollIntoView({ block: 'start' }));
-      return '#trajectory-details';
+      requestAnimationFrame(() => section.scrollIntoView({ block: 'start' }));
+      return '#trajectory-demo';
     }
+    const target = document.getElementById(id);
     let parent = target;
     while (parent) { if (parent.tagName === 'DETAILS') parent.open = true; parent = parent.parentElement; }
   };
